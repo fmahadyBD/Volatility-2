@@ -14,10 +14,10 @@ Run **Volatility 2** inside Docker without worrying about Python 2 or dependenci
 docker build -t myvol2 .
 
 # Run interactive container (mounts dumps)
-docker run -it --name vol2 -v /home/user/Desktop/sheard:/memdump myvol2 bash
+docker run -it --name vol2 -v /home/mahady-hasan-fahim/Desktop/sheard:/memdump myvol2 bash
 
 # One-shot run (auto-remove after)
-docker run --rm -v /home/user/Desktop/sheard:/memdump myvol2 \
+docker run --rm -v /home/mahady-hasan-fahim/Desktop/sheard:/memdump myvol2 \
   python2 vol.py -f /memdump/basic.dmp imageinfo
 ```
 

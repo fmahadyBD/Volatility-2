@@ -1,4 +1,4 @@
-# Volatility 2 Memory Forensics Docker
+# Volatility-2 Memory Forensics Docker
 
 This repository provides a **Docker-based environment** for running **Volatility 2**, which is useful for memory forensics analysis of kernel-level rootkits and other types of malware.  
 

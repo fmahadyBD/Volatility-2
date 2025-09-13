@@ -46,7 +46,7 @@ sudo docker build -t myvol2 .
 Mount a host folder containing memory dumps to `/memdump` inside the container:
 
 ```bash
-docker run -it --name vol2 -v /home/user/Desktop/shared:/memdump myvol2 bash
+sudo docker run -it --name vol2 -v /home/user/Desktop/shared:/memdump myvol2 bash
 ```
 
 **b) Run a single Volatility command without keeping the container**
@@ -54,10 +54,14 @@ docker run -it --name vol2 -v /home/user/Desktop/shared:/memdump myvol2 bash
 This runs the container, executes the command, and then exits:
 
 ```bash
-docker run --rm -v /home/user/Desktop/shared:/memdump myvol2 \
+sudo docker run --rm -v /home/user/Desktop/shared:/memdump myvol2 \
   python2 vol.py -f /memdump/basic.dmp imageinfo
 ```
 
+**c) Exit from bash
+```bash
+exit
+```
 ---
 
 ### 4. Managing the Container
